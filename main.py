@@ -91,7 +91,7 @@ i.start()
 os.startfile(path)
 while True:
     # 检查是否正在运行
-    if is_process_running('java.exe'):
+    if is_process_running('java.exe') or is_process_running('javaw.exe'):
         pass
         # print(f"{elapsed_time} / {limit}")
     else:
